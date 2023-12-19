@@ -8,10 +8,8 @@
   $sql = "SELECT * FROM `member_system`.`members` WHERE `email` = '$session_mail' ";
   $result = mysqli_query($dbConnection, $sql);
   $row = mysqli_fetch_assoc($result);
-  echo var_dump($row);
   $name = $row['name'];
   $phone = $row['phone'];
-  echo $phone;
   $birthday = $row['birthday'];
 ?>
 <h1>Modify Profile Page</h1>
